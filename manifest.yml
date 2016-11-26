@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: MyTestRobot
+  host: MyTestRobot
+  disk_quota: 1024M
+  services:
+  - Conversation-mu
+  - Speech to Text-fd
+  - Text to Speech-td
